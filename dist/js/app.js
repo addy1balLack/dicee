@@ -125,7 +125,10 @@ btnQuit.addEventListener('click', function () {
     won[0] = 100;
     won[1] = 1000;
     diceImage.src = `images/dice-default.png`;
-   init();
+    selectors.forEach( (selected) => {
+        selected.classList.remove('selected');
+        selected.classList.remove('won');
+    });
 });
 
 
