@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dicee</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+    <div class="container">
+        <h1>Dicee</h1>
+
+        <p class="alert center"></p>
+        <div class="flex bet">
+            <div class="bet-info center">
+                <p id="status">Amount Staked</p>
+                <h4 id="stake-amount">$50</h4>
+            </div>
+
+            <div class="form-group">
+                <label for="stake">Stake</label>
+                <input type="text" id="stake" placeholder="Amount - $20">
+
+                <button id="stake-btn" class="btn btn-primary">Stake</button>
+            </div>
+        </div>
+
+
+        <div class="selectors">
+            <div class="selector number-1">1</div>
+            <div class="selector number-2">2</div>
+            <div class="selector number-3">3</div>
+            <div class="selector number-4">4</div>
+            <div class="selector number-5">5</div>
+            <div class="selector number-6">6</div>
+        </div>
+
+        <div class="wrapper">
+            <div class="user">
+                <h4>User</h4>
+                <span id="user-score">$0</span>
+            </div>
+
+            <div class="dice">
+                <img id="dice" src="images/dice-default.png" alt="">
+                <div class="btns">
+                    <button id="btn-roll" class="btn btn-primary">
+                        Roll
+                    </button>
+                    <button id="btn-quit" class="btn btn-outline">Quit</button>
+                </div>
+            </div>
+
+            <div class="user computer">
+                <h4>CPU</h4>
+                <span id="cpu-score">$9000</span>
+            </div>
+        </div>
+
+    </div>
+
+
+<script src="js/app.js"></script>
+</body>
+</html>
